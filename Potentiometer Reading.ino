@@ -1,8 +1,24 @@
+/*
+A 3-bit ADC has three bits of resolution. Because 2 =
+8, there are a total of eight logic levels, from 0 to 7.
+Therefore, any analog value that is passed to a 3-bit
+ADC will have to be assigned a value from 0 to 7
+
+
+and Arduino UNO uses a 10 bit = 2^10 logical levels
+*/
+
+
 const int POT = 0;
 int val = 0;
 
 void setup(){
   Serial.begin(9600); //Initialize (start) serial communication at 9600 bits per second
+/*Serial.begin() takes
+one argument that specifies the communication speed,
+or baud rate. The baud rate specifies the number of
+bits being transferred per second
+	*/
 }
 
 void loop(){
