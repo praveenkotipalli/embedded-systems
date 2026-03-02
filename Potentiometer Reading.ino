@@ -3,6 +3,11 @@ int val = 0;
 
 void setup(){
   Serial.begin(9600); //Initialize (start) serial communication at 9600 bits per second
+/*Serial.begin() takes
+one argument that specifies the communication speed,
+or baud rate. The baud rate specifies the number of
+bits being transferred per second
+	*/
 }
 
 void loop(){
